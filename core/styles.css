@@ -1,4 +1,5 @@
-/* Variables CSS para colores y
+body {
+  /* Variables CSS para colores y
 fuentes */
 :root {
 --primary-color: #007bff; /* Azul
