@@ -1,8 +1,116 @@
-* Formulario de contacto (nombre,
-email, teléfono, mensaje, tipo de
-consulta).
-* Mapa de Google Maps con la
-ubicación.
-* Horarios de atención.
-* Teléfonos y correos electrónicos
-directos.
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | System Gregory PC</title>
+    
+    <meta name="author" content="José Gregorio Hernández Calderón">
+    <link rel="icon" type="image/x-icon" href="https://systemgregorypc.com/favicon.ico">
+    
+    <style>
+        :root {
+            --primary: #0056b3;
+            --dark: #1a1a1a;
+            --light: #f4f4f4;
+            --whatsapp: #25d366;
+        }
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background: var(--light);
+            color: var(--dark);
+        }
+        header {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .social-links a {
+            display: block;
+            margin: 10px 0;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .whatsapp-btn {
+            background: var(--whatsapp);
+            color: white !important;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .hours { background: #fffde7; border-left: 5px solid #fbc02d; }
+        footer { text-align: center; padding: 2rem; background: var(--dark); color: white; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contactos</h1>
+    <p>GRACIAS POR SU VISITA</p>
+</header>
+
+<div class="container">
+    <div class="info-card">
+        <h2>Ubícanos</h2>
+        <p><strong>CASA MATRIZ PRINCIPAL</strong></p>
+        <p>System Gregory PC<br>
+        Calle 5 sol N# 0-7<br>
+        Cuesta los Colorados, La Concordia<br>
+        San Cristóbal, Táchira, Venezuela</p>
+    </div>
+
+    <div class="info-card social-links">
+        <h2>Redes Sociales</h2>
+        <p><strong>Emails:</strong><br>
+        systemgregoryp.c@gmail.com<br>
+        systemgregorypc@hotmail.com</p>
+        
+        <a href="https://twitter.com/systemgregorypc" target="_blank">Twitter: @systemgregorypc</a>
+        <a href="https://www.facebook.com/system2gregory7pc?ref=stream" target="_blank">Facebook: System Gregory PC</a>
+        <a href="https://vk.com/id234187900" target="_blank">VK: id234187900</a>
+        <a href="https://www.youtube.com/channel/UCqu30DrMHgLUTKDIUGu83HQ/featured?view_as=subscriber" target="_blank">YouTube: Canal Oficial</a>
+    </div>
+
+    <div class="info-card">
+        <h2>Atención al Cliente</h2>
+        <p><strong>WhatsApp:</strong></p>
+        <a href="https://wa.me/584161177334" class="whatsapp-btn">+58 416 1177334</a>
+        <p style="margin-top:10px;">+1 (585) ... / +58 416 1177334</p>
+        
+        <p><strong>Líneas Fijas:</strong><br>
+        +58 276-3468123 / 0426-2890002</p>
+
+        <div class="hours" style="padding: 10px; margin-top: 15px;">
+            <p><strong>Horarios:</strong><br>
+            Lun-Vie: 7:30 am - 7:00 pm<br>
+            Sábado: 9:30 am - 3:00 pm<br>
+            Domingo: 10:00 am - 2:00 pm</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 System Gregory PC - Innovación desde San Cristóbal</p>
+</footer>
+
+</body>
+</html>
